@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cocoon × Mazarine — Brand Activation Venues · September 2026</title>
+<meta name="description" content="Venue proposal from Cocoon Flex Spaces for Mazarine New York · Audemars Piguet brand activation, September 13–17, 2026." />
+<style>
+  /* ============================================================
+     COCOON BRAND TOKENS
+     Primary: #F54029 (Brilliance / terracotta) + #F5F2E8 (Natural / cream)
+     Accent:  #275453 (Clarity / deep teal), #000000 (Black)
+     Type:    Helvetica Neue — Bold for titles, Medium for headlines, Regular for body
+     ============================================================ */
+
+  :root {
+    --cream: #F5F2E8;
+    --cream-deep: #ECE7D6;
+    --cream-warm: #EFE9D7;
+    --terracotta: #F54029;
+    --terracotta-soft: #E8593F;
+    --terracotta-deep: #C8331E;
+    --teal: #275453;
+    --teal-soft: #355F5E;
+    --ink: #1A1A1A;
+    --ink-soft: #4A4A4A;
+    --ink-mute: #6B6B6B;
+    --rule: rgba(26,26,26,0.12);
+    --rule-soft: rgba(26,26,26,0.06);
+    --max: 1280px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--terracotta); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* TYPE SCALE */
+  .superhead {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 11px;
+    color: var(--terracotta);
+  }
+  .title {
+    font-weight: 700;
+    font-size: clamp(40px, 7vw, 96px);
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  .headline {
+    font-weight: 500;
+    font-size: clamp(22px, 2.8vw, 36px);
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    margin: 0 0 0.6em;
+  }
+  .lede {
+    font-weight: 400;
+    font-size: clamp(18px, 1.5vw, 22px);
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0 0 1em;
+  }
+  .body { font-size: 17px; line-height: 1.6; }
+  .caption {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+  }
+  .eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+  }
+
+  /* SECTION FRAME */
+  section {
+    padding: clamp(64px, 10vh, 120px) clamp(24px, 5vw, 80px);
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  section + section { border-top: 1px solid var(--rule); }
+  section.tight { padding-top: clamp(48px, 6vh, 72px); padding-bottom: clamp(48px, 6vh, 72px); }
+  section.full {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.full > .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+
+  .logomark { width: 28px; height: 28px; flex: 0 0 auto; }
+  .wordmark { height: 16px; width: auto; flex: 0 0 auto; }
+  .topbar-brand .partner img { height: 120px; width: auto; flex: 0 0 auto; opacity: 0.82; }
+
+  /* TOP BAR */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 242, 232, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 8px clamp(24px, 5vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    height: 72px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .topbar-brand { display: flex; align-items: center; gap: 18px; font-size: 13px; }
+  .topbar-brand .cocoon { display: flex; align-items: center; gap: 10px; padding-right: 18px; }
+  .topbar-brand .divider { width: 1px; height: 22px; background: var(--rule); flex: 0 0 auto; }
+  .topbar-brand .partner {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink);
+  }
+  .topbar-meta {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  @media (max-width: 700px) { .topbar-meta { display: none; } }
+
+  /* COVER */
+  .cover {
+    position: relative;
+    background: var(--cream);
+    padding: 0;
+    max-width: none;
+    overflow: hidden;
+    border-bottom: 1px solid var(--rule);
+  }
+  .cover-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    min-height: 640px;
+  }
+  .cover-text {
+    padding: clamp(40px, 6vw, 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    background: var(--cream);
+  }
+  .cover-image {
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cover-meta {
+    display: grid;
+    gap: 6px;
+    margin-top: 32px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+  .cover-meta strong { color: var(--ink); font-weight: 600; }
+  @media (max-width: 900px) {
+    .cover-grid { grid-template-columns: 1fr; }
+    .cover-image { min-height: 280px; }
+  }
+
+  /* TWO-COL */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+  .two-col.media-first { grid-template-columns: 1.4fr 1fr; }
+  .two-col.balanced { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 840px) {
+    .two-col, .two-col.media-first, .two-col.balanced { grid-template-columns: 1fr; }
+  }
+
+  /* PHOTO CARDS / FRAMES */
+  .photo {
+    background: var(--cream-deep);
+    overflow: hidden;
+    position: relative;
+  }
+  .photo img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transition: transform 600ms ease;
+  }
+  .photo.tall img { aspect-ratio: 3/4; }
+  .photo.square img { aspect-ratio: 1/1; }
+  .photo.wide img { aspect-ratio: 16/9; }
+  .photo-grid { display: grid; gap: 18px; }
+  .photo-grid.two { grid-template-columns: 1fr 1fr; }
+  .photo-grid.three { grid-template-columns: repeat(3, 1fr); }
+  .photo-grid.four { grid-template-columns: repeat(4, 1fr); }
+
+  /* QUAD MOSAIC — 1 featured + 3 stacked */
+  .photo-grid.quad {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 18px;
+  }
+  .photo-grid.quad > :nth-child(1) { grid-row: 1 / 4; }
+  .photo-grid.quad .photo { height: 100%; min-height: 0; }
+  .photo-grid.quad .photo img {
+    width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover;
+  }
+  @media (max-width: 900px) {
+    .photo-grid.quad { grid-template-columns: 1fr 1fr; grid-template-rows: auto auto; }
+    .photo-grid.quad > :nth-child(1) { grid-row: 1; grid-column: 1 / 3; }
+    .photo-grid.quad .photo img { aspect-ratio: 3/2; }
+  }
+  @media (max-width: 640px) {
+    .photo-grid.two, .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr; }
+  }
+
+  /* OPTION HEADER — space sections */
+  .option-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    align-items: end;
+    margin-bottom: 32px;
+  }
+  .option-num {
+    font-size: clamp(64px, 8vw, 110px);
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--terracotta);
+    letter-spacing: -0.04em;
+  }
+  .option-title {
+    font-size: clamp(26px, 3vw, 40px);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .option-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  /* PRICE DISPLAY */
+  .price-display {
+    margin-top: 14px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .price-display .amount {
+    font-size: clamp(26px, 3vw, 38px);
+    font-weight: 700;
+    color: var(--terracotta);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+  .price-display .qualifier {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+  }
+
+  /* SPEC GRID */
+  .spec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border: 1px solid var(--rule);
+    margin-top: 32px;
+  }
+  .spec-item {
+    padding: 22px 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .spec-item:nth-child(odd) { border-right: 1px solid var(--rule); }
+  .spec-item:nth-last-child(-n+2) { border-bottom: none; }
+  .spec-item .spec-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 6px;
+  }
+  .spec-item .spec-val {
+    font-size: 15px;
+    line-height: 1.45;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .spec-item .spec-val.soft { color: var(--ink-soft); font-weight: 400; }
+  @media (max-width: 640px) {
+    .spec-grid { grid-template-columns: 1fr; }
+    .spec-item:nth-child(odd) { border-right: none; }
+    .spec-item:nth-last-child(-n+2) { border-bottom: 1px solid var(--rule); }
+    .spec-item:last-child { border-bottom: none; }
+  }
+
+  /* CALLOUT BAR */
+  .callout {
+    background: var(--terracotta);
+    color: #FFF;
+    padding: clamp(40px, 6vw, 80px);
+    margin: 0;
+    max-width: none;
+  }
+  .callout .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+  .callout .title { color: #FFF; }
+  .callout .superhead { color: rgba(255,255,255,0.88); }
+  .callout .lede { color: rgba(255,255,255,0.92); }
+  .callout.teal { background: var(--teal); }
+  .callout.ink { background: var(--ink); }
+
+  /* NOTE BOX */
+  .note {
+    background: #FFF;
+    border-left: 3px solid var(--terracotta);
+    padding: 32px 36px;
+    margin: 32px 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .note p { margin: 0 0 14px; }
+  .note p:last-child { margin-bottom: 0; }
+  .note .signature {
+    margin-top: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--terracotta);
+    font-weight: 700;
+  }
+
+  /* COMPARISON TABLE */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 32px;
+  }
+  .compare-table th {
+    text-align: left;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    color: var(--ink-soft);
+    padding: 12px 16px;
+    background: var(--cream-warm);
+    border-bottom: 2px solid var(--ink);
+  }
+  .compare-table td {
+    padding: 18px 16px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+    line-height: 1.4;
+  }
+  .compare-table td.space-name { font-weight: 700; color: var(--ink); }
+  .compare-table td.price-col {
+    font-weight: 700;
+    color: var(--terracotta);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .compare-table tr:hover td { background: rgba(245,242,232,0.5); }
+  .compare-table .avail-yes { color: #1A6B3C; font-weight: 600; }
+  .compare-table .avail-tbd { color: var(--ink-soft); }
+  .compare-table .avail-new { color: var(--teal); font-weight: 600; }
+
+  /* WALK / NEXT STEPS */
+  .walk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .walk .step {
+    border-top: 2px solid var(--terracotta);
+    padding-top: 24px;
+  }
+  .walk .step-num {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--terracotta);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .walk .step h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .walk .step p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  @media (max-width: 800px) { .walk { grid-template-columns: 1fr; } }
+
+  /* PLACEHOLDER FRAME */
+  .placeholder-frame {
+    background: var(--cream-deep);
+    border: 1px dashed rgba(26,26,26,0.18);
+    padding: 56px 32px;
+    text-align: center;
+    color: var(--ink-soft);
+    aspect-ratio: 3/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .placeholder-frame .ph-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+  }
+  .placeholder-frame .ph-text { font-size: 14px; max-width: 360px; }
+
+  /* FLOOR TAG */
+  .floor-tag {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background: rgba(26,26,26,0.72);
+    color: #FFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    padding: 5px 10px;
+  }
+
+  /* VIDEO */
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: var(--ink);
+  }
+  .video-wrap iframe {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    border: 0;
+  }
+
+  /* PILL BADGE */
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    padding: 5px 12px;
+    border: 1px solid currentColor;
+  }
+  .badge.green { color: #1A6B3C; border-color: #1A6B3C; background: rgba(26,107,60,0.06); }
+  .badge.amber { color: #7A5C00; border-color: #7A5C00; background: rgba(122,92,0,0.06); }
+  .badge.teal { color: var(--teal); border-color: var(--teal); background: rgba(39,84,83,0.06); }
+
+  /* FOOTER */
+  .footer-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: clamp(48px, 8vh, 80px) clamp(24px, 5vw, 80px);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--rule);
+  }
+  .footer-sig { font-size: 13px; color: var(--ink-soft); line-height: 1.7; }
+  .footer-sig strong { display: block; color: var(--ink); font-weight: 700; font-size: 16px; margin-bottom: 4px; }
+  .footer-meta { text-align: right; font-size: 12px; color: var(--ink-mute); line-height: 1.7; }
+
+
+  /* LIGHTBOX */
+  #lb-overlay {
+    display: none; position: fixed; inset: 0; z-index: 9999;
+    background: rgba(10,10,10,0.93);
+    align-items: center; justify-content: center;
+    cursor: zoom-out;
+  }
+  #lb-overlay.open { display: flex; }
+  #lb-overlay img {
+    max-width: 92vw; max-height: 90vh;
+    object-fit: contain; aspect-ratio: auto;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+    cursor: default;
+  }
+  #lb-close {
+    position: fixed; top: 20px; right: 24px;
+    font-size: 32px; color: #fff; opacity: 0.7;
+    cursor: pointer; line-height: 1; user-select: none;
+    font-family: sans-serif; font-weight: 300;
+  }
+  #lb-close:hover { opacity: 1; }
+  #lb-prev, #lb-next {
+    position: fixed; top: 50%; transform: translateY(-50%);
+    font-size: 40px; color: #fff; opacity: 0.5;
+    cursor: pointer; padding: 12px 20px; user-select: none;
+    font-family: sans-serif; font-weight: 200;
+  }
+  #lb-prev { left: 12px; } #lb-next { right: 12px; }
+  #lb-prev:hover, #lb-next:hover { opacity: 0.9; }
+  .photo img { cursor: zoom-in; }
+</style>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-brand">
+      <div class="cocoon">
+        <img class="logomark" src="img/cocoon/mark-128.png" alt="Cocoon mark" />
+        <img class="wordmark" src="img/cocoon/wordmark-320.png" alt="Cocoon" />
+      </div>
+      <div class="divider"></div>
+      <span class="partner"><img src="img/ap-logo.svg" alt="Audemars Piguet" height="13" style="display:block;opacity:0.82;" /></span>
+    </div>
+    <div class="topbar-meta">Brand Activation Venues · September 2026</div>
+  </div>
+</header>
+
+<!-- ===== COVER ===== -->
+<div class="cover">
+  <div class="cover-grid">
+    <div class="cover-text">
+      <div>
+        <div class="superhead">Cocoon × Mazarine New York</div>
+        <h1 class="title" style="margin-top: 20px;">Nine<br/>spaces.<br/><span style="color: var(--terracotta);">September.</span></h1>
+      </div>
+      <div class="cover-meta">
+        <div><strong>Occasion</strong> &nbsp;·&nbsp; Brand activation</div>
+        <div><strong>Client</strong> &nbsp;·&nbsp; Audemars Piguet</div>
+        <div><strong>Event date</strong> &nbsp;·&nbsp; September 16, 2026</div>
+        <div><strong>Rental window</strong> &nbsp;·&nbsp; September 13–17, 2026</div>
+        <div><strong>Daily access</strong> &nbsp;·&nbsp; 7:00 AM – 10:00 PM</div>
+        <div><strong>Group size</strong> &nbsp;·&nbsp; 25–30 per activation</div>
+        <div><strong>Prepared for</strong> &nbsp;·&nbsp; Olivia Baker, Ariella Paradise · Mazarine</div>
+        <div><strong>Prepared by</strong> &nbsp;·&nbsp; Eduard Monteagudo · Cocoon Flex Spaces</div>
+      </div>
+    </div>
+    <div class="cover-image">
+      <img src="img/salon94/stone-room-b.jpg" alt="Landmark off Fifth — carved stone room with arched windows" />
+    </div>
+  </div>
+</div>
+
+<!-- ===== PERSONAL NOTE ===== -->
+<section>
+  <div class="superhead">From Eduard</div>
+  <div class="note" style="margin-top: 20px;">
+    <p>Olivia, Ariella — thank you for the detail you shared on the brief. A luxury Maison, 25–30 guests per group, a five-day run centered on September 16th: that narrows the field considerably, and in the right direction.</p>
+    <p>What follows are nine spaces, selected for their character, discretion, and operational readiness for an activation of this caliber. They range from intimate Cocoon-owned lofts and townhouses to a Nolita collector's apartment, a gallery-format Manhattan loft, a pair of private brownstones from our Discovery Portfolio, a landmark gallery on the Upper East Side, and an extraordinary Tribeca duplex penthouse entering Cocoon's portfolio through a direct developer partnership.</p>
+    <p>Each section includes the day rate, a five-day run total, access and elevator notes, the extent to which furniture and art can be removed, and what kinds of events have used the space before. Availability is confirmed or flagged clearly throughout.</p>
+    <p>If any space catches the eye, the next step is a site visit — we can coordinate those as soon as you signal which directions to move on.</p>
+    <div class="signature">Eduard Monteagudo · Lead, Activation Rentals · Cocoon Flex Spaces</div>
+  </div>
+</section>
+
+<!-- ===== OVERVIEW CALLOUT ===== -->
+<div class="callout full" style="padding-left: clamp(24px, 5vw, 80px); padding-right: clamp(24px, 5vw, 80px);">
+  <div style="max-width: var(--max); margin: 0 auto;">
+    <div class="superhead" style="color: rgba(255,255,255,0.88);">Nine options · Priced and available</div>
+    <h2 class="title" style="color: #FFF; margin-top: 18px; max-width: 820px;">From Tribeca loft to Upper East Side landmark — all at the level of Audemars Piguet.</h2>
+    <p class="lede" style="margin-top: 24px;">All seven spaces are Cocoon-curated or Discovery Portfolio — not available through standard venue platforms. A Casa Manager is included in every rental. Pricing below reflects the full five-day run (September 13–17) and is held for the next 5 business days.</p>
+  </div>
+</div>
+
+<!-- ===============================================================
+     SPACE 01 — CASA MAXIMA
+     =============================================================== -->
+<section>
+  <div class="option-header">
+    <div class="option-num">01</div>
+    <div>
+      <div class="option-tag">Tribeca · Cocoon-owned · Loft</div>
+      <h2 class="option-title">A maximalist Tribeca loft.<br/>Fully dressed, fully flexible — the most eclectic interior in the set.</h2>
+      <div class="price-display">
+        <span class="amount">$15,000<span style="font-size:0.5em;font-weight:600;">/day</span></span>
+        <span class="qualifier">Casa Manager included · available</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid quad" style="margin-top: 0;">
+    <div class="photo"><img src="img/maxima/01.jpg" alt="Casa Maxima — interior" /></div>
+    <div class="photo"><img src="img/maxima/02.jpg" alt="Casa Maxima — interior" /></div>
+    <div class="photo"><img src="img/maxima/03.jpg" alt="Casa Maxima — interior" /></div>
+    <div class="photo"><img src="img/maxima/04.jpg" alt="Casa Maxima — interior" /></div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A 3,200 sq ft Tribeca loft with a deliberately maximalist interior — pink Venetian-plaster walls, gilded columns, a grand piano, statement art at the door. Exclusively represented and operated by Cocoon. The space has hosted corporate meetings, brand panels, and intimate workshops; this would be its first major luxury brand activation, which means the space arrives entirely fresh to Audemars Piguet's visual language.</p>
+      <p class="body" style="margin-top: 16px;">The interiors can be selectively dressed down — individual art pieces, the grand piano, and movable furniture can be repositioned or removed on request. The Venetian plaster and gilded columns are structural; everything else is staging.</p>
+    </div>
+    <div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <div class="spec-label">Capacity</div>
+          <div class="spec-val">Up to 74 guests · open-plan loft</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Access</div>
+          <div class="spec-val">Elevator building · freight access available</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Furniture & art removal</div>
+          <div class="spec-val">Partial — movable pieces repositionable or removed; structural finishes remain in place<br/><span style="font-size:12px;color:var(--ink-soft);font-style:italic;">All removable · final list required to confirm · potential blocks noted for specific pieces</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Availability</div>
+          <div class="spec-val"><span class="badge green">Available</span><br/><span style="font-size:13px;color:var(--ink-soft);">Subject to ownership confirmation · Site visits from July 1st</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Previous brand activations</div>
+          <div class="spec-val soft">Corporate meetings, brand panels, workshops — no luxury brand activations to date. First of its kind.</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Sound / noise</div>
+          <div class="spec-val soft">Confirm with Cocoon team for music-forward activations</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid four" style="margin-top: 24px;">
+    <div class="photo"><img src="img/maxima/05.jpg" alt="Casa Maxima" /></div>
+    <div class="photo"><img src="img/maxima/06.jpg" alt="Casa Maxima" /></div>
+    <div class="photo"><img src="img/maxima/07.jpg" alt="Casa Maxima" /></div>
+    <div class="photo"><img src="img/maxima/08.jpg" alt="Casa Maxima" /></div>
+  </div>
+
+  <p class="body" style="font-size:13px; color:var(--ink-soft); margin-top: 24px; max-width: 820px;">$15,000/day · Casa Manager included. Five-day run (Sept 13–17): <strong>$75,000</strong>. Cleaning service available at $300/service. Site visits available from July 1st — reach out to schedule.</p>
+</section>
+
+<!-- ===============================================================
+     SPACE 02 — CASA VICTORIA
+     =============================================================== -->
+<section>
+  <div class="option-header">
+    <div class="option-num">02</div>
+    <div>
+      <div class="option-tag">Cocoon-owned · Townhouse</div>
+      <h2 class="option-title">Casa Victoria.<br/>An art-filled townhouse — the entire collection available for removal.</h2>
+      <div class="price-display">
+        <span class="amount">$25,000<span style="font-size:0.5em;font-weight:600;">/day</span></span>
+        <span class="qualifier">Casa Manager included · availability confirming</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid quad" style="margin-top: 0;">
+    <div class="photo"><img src="img/victoria/01.jpg" alt="Casa Victoria — interior" /></div>
+    <div class="photo"><img src="img/victoria/02.jpg" alt="Casa Victoria — interior" /></div>
+    <div class="photo"><img src="img/victoria/03.jpg" alt="Casa Victoria — interior" /></div>
+    <div class="photo"><img src="img/victoria/04.jpg" alt="Casa Victoria — interior" /></div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">Casa Victoria is a Cocoon-operated townhouse with a curated art collection throughout. For clients who want to bring their own visual world into the space, the entire art collection can be removed with a furniture handler — we can provide a quote for that service alongside the rental. What remains is the architecture itself: the proportions, the floors, the light.</p>
+      <p class="body" style="margin-top: 16px;">This makes Victoria one of the most versatile spaces in the Cocoon portfolio for brand activations: it arrives dressed as a home, and can be transformed into a clean canvas for AP's installation without negotiating around fixed installations.</p>
+    </div>
+    <div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <div class="spec-label">Capacity</div>
+          <div class="spec-val">Townhouse format · ideal for 25–50 guests</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Access</div>
+          <div class="spec-val">Passenger elevator · freight elevator<br/><span style="font-size:12px;color:var(--ink-soft);">Full load-in access available</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Furniture & art removal</div>
+          <div class="spec-val">Full art collection removable · furniture handler quote on request<br/><span style="font-size:12px;color:var(--ink-soft);font-style:italic;">All removable · final list required to confirm · potential blocks noted for specific pieces</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Availability</div>
+          <div class="spec-val"><span class="badge amber">Confirming</span><br/><span style="font-size:13px;color:var(--ink-soft);">Signal interest to hold</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Previous brand activations</div>
+          <div class="spec-val soft">Available on request — contact Cocoon team</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Sound / noise</div>
+          <div class="spec-val soft">Residential context — soft programming preferred; confirm for music</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid four" style="margin-top: 24px;">
+    <div class="photo"><img src="img/victoria/05.jpg" alt="Casa Victoria" /></div>
+    <div class="photo"><img src="img/victoria/06.jpg" alt="Casa Victoria" /></div>
+    <div class="photo"><img src="img/victoria/07.jpg" alt="Casa Victoria" /></div>
+    <div class="photo"><img src="img/victoria/08.jpg" alt="Casa Victoria" /></div>
+  </div>
+
+  <p class="body" style="font-size:13px; color:var(--ink-soft); margin-top: 24px; max-width: 820px;">$25,000/day · Casa Manager included. Five-day run (Sept 13–17): <strong>$125,000</strong>. Cleaning service available at $400/service. Art removal: furniture handler quote provided on request. Availability confirming — signal interest to hold.</p>
+</section>
+
+<!-- ===============================================================
+     SPACE 03 — CASA JOY
+     =============================================================== -->
+<section>
+  <div class="option-header">
+    <div class="option-num">03</div>
+    <div>
+      <div class="option-tag">Cocoon-owned · Townhouse · Flexible canvas</div>
+      <h2 class="option-title">Casa Joy.<br/>Airy bones, whimsical character — transformable to a clean installation space.</h2>
+      <div class="price-display">
+        <span class="amount">$27,000<span style="font-size:0.5em;font-weight:600;">/day</span></span>
+        <span class="qualifier">Casa Manager included · available</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid quad" style="margin-top: 0;">
+    <div class="photo"><img src="img/joy/lobby-fireplace.jpg" alt="Casa Joy — lobby with fireplace" /></div>
+    <div class="photo"><img src="img/joy/library.jpg" alt="Casa Joy — library" /></div>
+    <div class="photo"><img src="img/joy/piano-room.jpg" alt="Casa Joy — piano room" /></div>
+    <div class="photo"><img src="img/joy/rose-garden.jpg" alt="Casa Joy — rose garden" /></div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">Casa Joy carries the most eclectic art collection in the Cocoon portfolio — which is precisely why we're including it here. We've seen clients pass on the space when they see the interiors fully dressed, not realizing that much of what's on the walls and in the rooms is removable. The bones of Joy are elegant, airy, and unmistakably classically New York: high ceilings, period detail, a garden.</p>
+      <p class="body" style="margin-top: 16px;">For an AP activation that wants to own the visual vocabulary of the space entirely, Joy's removable pieces create a canvas that most residential-scale venues cannot offer. The rose garden adds an outdoor moment that works particularly well for a luxury Maison looking for a distinctive arrival or cocktail beat.</p>
+    </div>
+    <div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <div class="spec-label">Capacity</div>
+          <div class="spec-val">Multi-room townhouse · 25–60 guests depending on layout</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Access</div>
+          <div class="spec-val">Elevator access · garden-level freight entrance</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Furniture & art removal</div>
+          <div class="spec-val">Significant pieces removable — space offered as a canvas · quote on request<br/><span style="font-size:12px;color:var(--ink-soft);font-style:italic;">All removable · final list required to confirm · potential blocks noted for specific pieces</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Availability</div>
+          <div class="spec-val"><span class="badge green">Available</span></div><!-- Casa Joy — stays green -->
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Previous brand activations</div>
+          <div class="spec-val soft">Available on request — contact Cocoon team</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Sound / noise</div>
+          <div class="spec-val soft">Residential context — confirm for amplified music</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid four" style="margin-top: 24px;">
+    <div class="photo"><img src="img/joy/dining-chandelier.jpg" alt="Casa Joy — dining room" /></div>
+    <div class="photo"><img src="img/joy/painting-studio.jpg" alt="Casa Joy — studio" /></div>
+    <div class="photo"><img src="img/joy/patio.jpg" alt="Casa Joy — patio" /></div>
+    <div class="photo"><img src="img/joy/staircase-basin.jpg" alt="Casa Joy — staircase" /></div>
+  </div>
+
+  <!-- Casa Joy — naked / unfurnished view -->
+  <div style="margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--rule);">
+    <div class="superhead" style="margin-bottom: 8px;">The space without the art</div>
+    <p class="body" style="max-width: 760px; margin-bottom: 28px; color:var(--ink-soft);">What Joy looks like cleared. The walls come clean, the furniture repositions, and the bones speak for themselves. These shots show the space as a canvas — the starting point for an AP installation that wants to own the visual from floor to ceiling.</p>
+    <div class="photo-grid quad" style="margin-top: 0;">
+      <div class="photo"><img src="img/joy-naked/01.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/02.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/03.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/04.jpg" alt="Casa Joy — unfurnished" /></div>
+    </div>
+    <div class="photo-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 14px;">
+      <div class="photo"><img src="img/joy-naked/05.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/06.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/07.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/08.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/09.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/10.jpg" alt="Casa Joy — unfurnished" /></div>
+    </div>
+    <div class="photo-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 14px;">
+      <div class="photo"><img src="img/joy-naked/11.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/12.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/13.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/14.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/15.jpg" alt="Casa Joy — unfurnished" /></div>
+      <div class="photo"><img src="img/joy-naked/16.jpg" alt="Casa Joy — unfurnished" /></div>
+    </div>
+  </div>
+
+  <!-- Casa Joy walkthrough video -->
+  <div style="margin-top: 40px; padding-top: 36px; border-top: 1px solid var(--rule);">
+    <div class="superhead" style="margin-bottom: 12px;">Walkthrough video</div>
+    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:820px; background:var(--ink);">
+      <iframe src="https://www.youtube.com/embed/XnShvyOtTyc" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Casa Joy walkthrough"></iframe>
+    </div>
+  </div>
+
+    <p class="body" style="font-size:13px; color:var(--ink-soft); margin-top: 24px; max-width: 820px;">$27,000/day · Casa Manager included. Five-day run (Sept 13–17): <strong>$135,000</strong>. Cleaning service available at $450/service. Art and furniture removal quoted on request.</p>
+</section>
+
+<!-- ===============================================================
+     SPACE 04 — WEST VILLAGE BROWNSTONE
+     =============================================================== -->
+<section>
+  <div class="option-header">
+    <div class="option-num">04</div>
+    <div>
+      <div class="option-tag">West Village · Discovery Portfolio · Private townhouse</div>
+      <h2 class="option-title">A West Village brownstone.<br/>The most layered of the private townhouses — collected art, garden, Village character.</h2>
+      <div class="price-display">
+        <span class="amount">$41,200<span style="font-size:0.5em;font-weight:600;">/day</span></span>
+        <span class="qualifier">On-site rep + cleaning included</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid quad" style="margin-top: 0;">
+    <div class="photo"><img src="img/nyc293/01.jpg" alt="West Village Brownstone — living room" /></div>
+    <div class="photo"><img src="img/nyc293/02.jpg" alt="West Village Brownstone — interior" /></div>
+    <div class="photo"><img src="img/nyc293/03.jpg" alt="West Village Brownstone — interior" /></div>
+    <div class="photo"><img src="img/nyc293/04.jpg" alt="West Village Brownstone — interior" /></div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A West Village townhouse with exactly the character a luxury Maison's activation brief calls for: collected art, warm rooms with original detail, and a garden on one of the neighborhood's most storied blocks. Of the private townhouses in this set, this one is the most room-by-room photogenic — every space has a considered point of view.</p>
+      <p class="body" style="margin-top: 16px;">This house is available exclusively through Cocoon's Discovery Portfolio and is not accessible through standard venue booking platforms. The ownership is brand-sensitive; we have a good relationship and are confident in the fit for an activation of AP's caliber.</p>
+    </div>
+    <div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <div class="spec-label">Capacity</div>
+          <div class="spec-val">Multi-floor townhouse · ideal for 25–40 guests</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Access</div>
+          <div class="spec-val">Stair access · West Village brownstone<br/><span style="font-size:12px;color:var(--ink-soft);">Street-level load-in available</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Furniture & art removal</div>
+          <div class="spec-val">Selective repositioning — confirm with ownership · art is personal collection<br/><span style="font-size:12px;color:var(--ink-soft);font-style:italic;">All removable · final list required to confirm · potential blocks noted for specific pieces</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Availability</div>
+          <div class="spec-val"><span class="badge green">Available</span><br/><span style="font-size:13px;color:var(--ink-soft);">Subject to ownership confirmation</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Previous brand activations</div>
+          <div class="spec-val soft">Private tastemaker events and intimate dinners; Discovery Portfolio — details on request</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Sound / noise</div>
+          <div class="spec-val soft">Residential West Village block — ambient/acoustic programming; confirm for amplified</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 24px;">
+    <div class="photo"><img src="img/nyc293/05.jpg" alt="West Village Brownstone" /></div>
+    <div class="photo"><img src="img/nyc293/06.jpg" alt="West Village Brownstone" /></div>
+    <div class="photo"><img src="img/nyc293/07.jpg" alt="West Village Brownstone" /></div>
+    <div class="photo"><img src="img/nyc293/08.jpg" alt="West Village Brownstone" /></div>
+    <div class="photo"><img src="img/nyc293/09.jpg" alt="West Village Brownstone" /></div>
+    <div class="photo"><img src="img/nyc293/10.jpg" alt="West Village Brownstone" /></div>
+  </div>
+
+  <p class="body" style="font-size:13px; color:var(--ink-soft); margin-top: 24px; max-width: 820px;">$41,200/day · on-site rep and cleaning included. Five-day run (Sept 13–17): <strong>$206,000</strong>. Security required and quoted with final contract. Subject to final ownership approval.</p>
+</section>
+
+<!-- ===============================================================
+     SPACE 05 — MANHATTAN BROWNSTONE II
+     =============================================================== -->
+<section>
+  <div class="option-header">
+    <div class="option-num">05</div>
+    <div>
+      <div class="option-tag">Manhattan · Discovery Portfolio · Private townhouse</div>
+      <h2 class="option-title">A Manhattan brownstone.<br/>Period rooms, a garden, and the discreet character of a private townhouse.</h2>
+      <div class="price-display">
+        <span class="amount">$44,200<span style="font-size:0.5em;font-weight:600;">/day</span></span>
+        <span class="qualifier">On-site rep + cleaning included</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid quad" style="margin-top: 0;">
+    <div class="photo"><img src="img/nyc327/01.jpg" alt="Manhattan Brownstone II — entry" /></div>
+    <div class="photo"><img src="img/nyc327/02.jpg" alt="Manhattan Brownstone II — living room" /></div>
+    <div class="photo"><img src="img/nyc327/03.jpg" alt="Manhattan Brownstone II — interior" /></div>
+    <div class="photo"><img src="img/nyc327/04.jpg" alt="Manhattan Brownstone II — interior" /></div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A Manhattan private townhouse with period rooms, a garden, and the understated quality that comes from a home that has been lived in and curated over time. The architecture reads as architecture — not as a venue. For a Maison like Audemars Piguet, where the activation should feel like a private invitation rather than an event, this distinction matters.</p>
+      <p class="body" style="margin-top: 16px;">Also available exclusively through Cocoon's Discovery Portfolio. The building has its own operational character — there is a building fee alongside the daily rate — but the result is a townhouse that arrives as a fully realized private world.</p>
+    </div>
+    <div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <div class="spec-label">Capacity</div>
+          <div class="spec-val">Multi-floor townhouse · ideal for 25–40 guests</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Access</div>
+          <div class="spec-val">Stair access · private brownstone entrance<br/><span style="font-size:12px;color:var(--ink-soft);">Street-level load-in available</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Furniture & art removal</div>
+          <div class="spec-val">Selective repositioning possible · art collection is personal<br/><span style="font-size:12px;color:var(--ink-soft);font-style:italic;">All removable · final list required to confirm · potential blocks noted for specific pieces</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Availability</div>
+          <div class="spec-val"><span class="badge green">Available</span><br/><span style="font-size:13px;color:var(--ink-soft);">Subject to ownership confirmation</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Previous brand activations</div>
+          <div class="spec-val soft">Private tastemaker events and intimate gatherings; details on request</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Sound / noise</div>
+          <div class="spec-val soft">Residential context — ambient/acoustic programming; confirm for amplified</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <p class="body" style="font-size:13px; color:var(--ink-soft); margin-top: 24px; max-width: 820px;">$44,200/day · on-site rep and cleaning included. Five-day run (Sept 13–17): <strong>$221,000</strong>. Note: building fee applies alongside the daily rate — confirm total with Cocoon. Security required and quoted with final contract. Subject to final ownership approval.</p>
+</section>
+
+<!-- ===============================================================
+     SPACE 06 — TRIBECA DUPLEX PENTHOUSE
+     =============================================================== -->
+<section>
+  <div class="option-header">
+    <div class="option-num">06</div>
+    <div>
+      <div class="option-tag">Tribeca · Developer partnership · Duplex penthouse · Never activated</div>
+      <h2 class="option-title">A Tribeca duplex penthouse.<br/>7,062 sq ft of Paris Forino-designed interior — double-height great room, Hudson River and Statue of Liberty views.</h2>
+      <div class="price-display">
+        <span class="amount">$70,000<span style="font-size:0.5em;font-weight:600;">/day</span></span>
+        <span class="qualifier">Casa Manager included · available</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Listing photography -->
+  <div class="photo-grid quad" style="margin-top: 0;">
+    <div class="photo"><img src="img/barclay/listing-01.webp" alt="Tribeca penthouse — great room" /></div>
+    <div class="photo"><img src="img/barclay/listing-02.webp" alt="Tribeca penthouse — double-height windows" /></div>
+    <div class="photo"><img src="img/barclay/listing-03.webp" alt="Tribeca penthouse — interior" /></div>
+    <div class="photo"><img src="img/barclay/listing-04.webp" alt="Tribeca penthouse — interior" /></div>
+  </div>
+
+  <div class="photo-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 14px;">
+    <div class="photo"><img src="img/barclay/listing-05.webp" alt="Tribeca penthouse" /></div>
+    <div class="photo"><img src="img/barclay/listing-06.webp" alt="Tribeca penthouse" /></div>
+    <div class="photo"><img src="img/barclay/listing-07.webp" alt="Tribeca penthouse" /></div>
+    <div class="photo"><img src="img/barclay/listing-08.webp" alt="Tribeca penthouse" /></div>
+    <div class="photo"><img src="img/barclay/listing-09.webp" alt="Tribeca penthouse" /></div>
+    <div class="photo"><img src="img/barclay/listing-10.webp" alt="Tribeca penthouse" /></div>
+  </div>
+
+  <div class="photo-grid" style="grid-template-columns: repeat(4, 1fr); margin-top: 14px;">
+    <div class="photo"><img src="img/barclay/listing-11.webp" alt="Tribeca penthouse" /></div>
+    <div class="photo"><img src="img/barclay/listing-12.webp" alt="Tribeca penthouse" /></div>
+    <div class="photo"><img src="img/barclay/listing-13.webp" alt="Tribeca penthouse" /></div>
+    <div class="photo"><img src="img/barclay/listing-14.webp" alt="Tribeca penthouse" /></div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A duplex penthouse in Tribeca, available exclusively through Cocoon's developer partnership — not yet on any rental market. The space spans two full floors totalling 7,062 sq ft and has been designed by Paris Forino, one of the city's most respected residential architects. The double-height great room reads like a living sculpture: Palladian arched windows running the full height of the room flood the space with Hudson River light. Views extend to the Statue of Liberty.</p>
+      <p class="body" style="margin-top: 16px;">This is the first space in the set where the architecture alone justifies the activation. The great room, the kitchen, the dining volume, and the private floors above create a sequence of distinct spaces that a single-floor venue cannot offer. It arrives as a brand-new canvas — no prior brand has activated here.</p>
+    </div>
+    <div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <div class="spec-label">Size</div>
+          <div class="spec-val">7,062 sq ft · Two full floors (duplex)</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Access</div>
+          <div class="spec-val">High-rise elevator building · direct penthouse access · freight available</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Architecture</div>
+          <div class="spec-val">Paris Forino design · double-height great room · Palladian arched windows · marble kitchen · open-plan entertaining floor</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Views</div>
+          <div class="spec-val">Hudson River · Statue of Liberty · Lower Manhattan skyline</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Availability</div>
+          <div class="spec-val"><span class="badge green">Available</span><br/><span style="font-size:13px;color:var(--ink-soft);">Subject to ownership confirmation · Site visit available from ~July 2</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Previous brand activations</div>
+          <div class="spec-val soft">None — inaugural activation. Brand-new space, never opened to market.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floor plan -->
+  <div style="margin-top: 48px;">
+    <div class="superhead" style="margin-bottom: 16px;">Floor plan · Duplex layout</div>
+    <div class="photo-grid two" style="gap: 14px;">
+      <div class="photo"><img src="img/barclay/fp-clean-p1.jpg" alt="Duplex penthouse — lower floor plan" style="aspect-ratio:auto;width:100%;height:auto;" /></div>
+      <div class="photo"><img src="img/barclay/fp-clean-p2.jpg" alt="Duplex penthouse — upper floor plan" style="aspect-ratio:auto;width:100%;height:auto;" /></div>
+    </div>
+    <div class="photo-grid two" style="gap: 14px; margin-top: 14px;">
+      <div class="photo"><img src="img/barclay/fp-clean-p3.jpg" alt="Duplex penthouse — detail plan A" style="aspect-ratio:auto;width:100%;height:auto;" /></div>
+      <div class="photo"><img src="img/barclay/fp-clean-p4.jpg" alt="Duplex penthouse — detail plan B" style="aspect-ratio:auto;width:100%;height:auto;" /></div>
+    </div>
+    <p style="font-size:12px;color:var(--ink-soft);margin-top:12px;">Floor plans shared under NDA — for internal Mazarine / AP use only. Not for distribution.</p>
+  </div>
+
+  <p class="body" style="font-size:13px; color:var(--ink-soft); margin-top: 32px; max-width: 820px;">$70,000/day · Casa Manager included. Five-day run (Sept 13–17): <strong>$350,000</strong>. Cleaning service at $750/service. Signal interest now to secure a priority site visit and hold September dates.</p>
+</section>
+
+<!-- ===============================================================
+     SPACE 07 — SALON 94 (LANDMARK OFF FIFTH)
+     =============================================================== -->
+<section>
+  <div class="option-header">
+    <div class="option-num">07</div>
+    <div>
+      <div class="option-tag">Upper East Side · Discovery Portfolio · Landmarked gallery</div>
+      <h2 class="option-title">Landmark off Fifth.<br/>A Beaux-Arts exhibition house built to show. The most architectural space in the set.</h2>
+      <div class="price-display">
+        <span class="amount">$84,500<span style="font-size:0.5em;font-weight:600;">/day</span></span>
+        <span class="qualifier">Casa Manager included · available · exhibitions cleared for rental</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid quad" style="margin-top: 0;">
+    <div class="photo"><img src="img/salon94/stone-room-a.jpg" alt="Landmark off Fifth — Stone Room with 15-ft arched windows" /></div>
+    <div class="photo"><img src="img/salon94/stair-oval.jpg" alt="Landmark off Fifth — neo-Renaissance oval staircase" /></div>
+    <div class="photo"><img src="img/salon94/wood-room-a.jpg" alt="Landmark off Fifth — Wood Room, mahogany panels" /></div>
+    <div class="photo"><img src="img/salon94/porte-cochere.jpg" alt="Landmark off Fifth — porte-cochère" /></div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A landmarked Beaux-Arts exhibition house on Manhattan's Upper East Side, steps from Fifth Avenue. Built to show — to receive, to impress, and to hold an audience. The building empties its exhibitions entirely for private rentals: white walls, carved stone, marble stairs, and the porte-cochère arrival that nothing else in this set can match.</p>
+      <p class="body" style="margin-top: 16px;">For Audemars Piguet, a Maison with its own landmark building on Fifth Avenue in Geneva, this space reads as a natural counterpart: institutional in its bones, intimate in its rooms. The wood-panelled salon, the carved stone gallery, the grand stair — each is a distinct beat within a single activation.</p>
+    </div>
+    <div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <div class="spec-label">Capacity</div>
+          <div class="spec-val">150+ guests across multiple rooms · scalable layout</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Access</div>
+          <div class="spec-label" style="margin-bottom:0;"></div>
+          <div class="spec-val">Drive-in porte-cochère · service elevator · full load-in infrastructure</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Furniture & art removal</div>
+          <div class="spec-val">Arrives as a white-box for the rental period — exhibitions cleared<br/><span style="font-size:12px;color:var(--ink-soft);font-style:italic;">Final walk-through list required to confirm · no known blocks</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Availability</div>
+          <div class="spec-val"><span class="badge green">Available</span><br/><span style="font-size:13px;color:var(--ink-soft);">Subject to ownership confirmation</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Previous brand activations</div>
+          <div class="spec-val soft">Gallery and institutional private events; brand activations at this level on request — speak with the Cocoon team</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Sound / noise</div>
+          <div class="spec-val soft">Stone construction provides significant acoustic separation; confirm amplified music with venue ops</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gallery grid — full listing image set -->
+  <div class="photo-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 24px; gap: 14px;">
+    <div class="photo"><img src="img/salon94/facade.jpg" alt="Landmark off Fifth — limestone façade" /></div>
+    <div class="photo"><img src="img/salon94/porte-cochere.jpg" alt="Landmark off Fifth — porte-cochère arrival" /></div>
+    <div class="photo"><img src="img/salon94/porte-cochere-doors.jpg" alt="Landmark off Fifth — landmark wood doors" /></div>
+    <div class="photo"><img src="img/salon94/stair-hall.jpg" alt="Landmark off Fifth — stair hall" /></div>
+    <div class="photo"><img src="img/salon94/stair-oval.jpg" alt="Landmark off Fifth — neo-Renaissance oval staircase" /></div>
+    <div class="photo"><img src="img/salon94/stair-detail.jpg" alt="Landmark off Fifth — stair detail" /></div>
+    <div class="photo"><img src="img/salon94/stone-room-a.jpg" alt="Landmark off Fifth — Stone Room with arched windows" /></div>
+    <div class="photo"><img src="img/salon94/stone-room-b.jpg" alt="Landmark off Fifth — Stone Room, arched casements" /></div>
+    <div class="photo"><img src="img/salon94/stone-room-event.jpg" alt="Landmark off Fifth — Stone Room event setup" /></div>
+    <div class="photo"><img src="img/salon94/gallery1-a.jpg" alt="Landmark off Fifth — ground floor gallery" /></div>
+    <div class="photo"><img src="img/salon94/gallery2-a.jpg" alt="Landmark off Fifth — second gallery space" /></div>
+    <div class="photo"><img src="img/salon94/gallery3.jpg" alt="Landmark off Fifth — gallery three" /></div>
+    <div class="photo"><img src="img/salon94/wood-room-a.jpg" alt="Landmark off Fifth — Wood Room, mahogany panels" /></div>
+    <div class="photo"><img src="img/salon94/wood-room-b.jpg" alt="Landmark off Fifth — Wood Room with fireplace" /></div>
+    <div class="photo"><img src="img/salon94/wood-room-chair.jpg" alt="Landmark off Fifth — Wood Room detail" /></div>
+    <div class="photo"><img src="img/salon94/limestone-detail.jpg" alt="Landmark off Fifth — limestone architectural detail" /></div>
+    <div class="photo"><img src="img/salon94/restroom-blue.jpg" alt="Landmark off Fifth — powder room" /></div>
+    <div class="photo"><img src="img/salon94/facade-historic.jpg" alt="Landmark off Fifth — historic façade c.1914" /></div>
+  </div>
+
+  <!-- Video walkthrough -->
+  <div style="margin-top: 32px;">
+    <div class="superhead" style="margin-bottom: 12px;">Video walkthrough</div>
+    <div class="video-wrap">
+      <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAHLiMoHQRE/Gk5GPBXM3GjqSo6wRgzO7g/watch?embed"
+        allowfullscreen="allowfullscreen"
+        allow="fullscreen"
+        title="Landmark off Fifth — video walkthrough">
+      </iframe>
+    </div>
+  </div>
+
+  <p class="body" style="font-size:13px; color:var(--ink-soft); margin-top: 24px; max-width: 820px;">$84,500/day · Casa Manager included · exhibitions cleared for the rental period. Five-day run (Sept 13–17): <strong>$422,500</strong>. This is the only space in the set that can accommodate 150+ guests and offers elevator access with a porte-cochère arrival.</p>
+</section>
+
+
+<!-- ===============================================================
+     SPACE 08 — CASA YUGEN
+     =============================================================== -->
+<section>
+  <div class="option-header">
+    <div class="option-num">08</div>
+    <div>
+      <div class="option-tag">Nolita · Cocoon portfolio · Collector's loft · 4th floor full-floor</div>
+      <h2 class="option-title">Casa Yugen.<br/>4,158 sq ft of corner light in Nolita — a permanent art collection, designer furniture, and open-plan living from entry to kitchen.</h2>
+      <div class="price-display">
+        <span class="amount">$25,000<span style="font-size:0.5em;font-weight:600;">/day</span></span>
+        <span class="qualifier">Casa Manager included · available</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid quad" style="margin-top: 0;">
+    <div class="photo"><img src="img/yugen/01.jpg" alt="Casa Yugen — main living space" /></div>
+    <div class="photo"><img src="img/yugen/02.jpg" alt="Casa Yugen — interior" /></div>
+    <div class="photo"><img src="img/yugen/03.jpg" alt="Casa Yugen — interior" /></div>
+    <div class="photo"><img src="img/yugen/04.jpg" alt="Casa Yugen — interior" /></div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">Casa Yugen is a full-floor collector's apartment on the 4th floor in Nolita — 4,158 sq ft designed around natural light, natural materials, and a curated art collection that lives permanently on the walls. Corner floor-to-ceiling windows flood the main living space with light on two axes. The open kitchen with island anchors one end; the living room opens to a small balcony on the other.</p>
+      <p class="body" style="margin-top: 16px;">The fireplace, the art, the designer furniture: each element has been chosen for the whole. For an AP activation, the space offers residential warmth at a scale that most Nolita venues cannot match — and a neighborhood character that feels genuinely downtown, genuinely New York. The permanent art collection can be curated around or worked with; the furniture can be repositioned.</p>
+    </div>
+    <div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <div class="spec-label">Size</div>
+          <div class="spec-val">4,158 sq ft · Full-floor loft · 4th floor</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Access</div>
+          <div class="spec-val">Elevator building · direct floor access</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Key features</div>
+          <div class="spec-val">Corner floor-to-ceiling windows · fireplace · open kitchen with island · balcony · permanent art collection · designer furniture</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Availability</div>
+          <div class="spec-val"><span class="badge green">Available</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Furniture & art removal</div>
+          <div class="spec-val">Furniture repositionable · art collection: full removal requires owner confirmation<br/><span style="font-size:12px;color:var(--ink-soft);font-style:italic;">All removable · final list required to confirm · potential blocks noted for specific pieces</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Sound / noise</div>
+          <div class="spec-val soft">Loft building — confirm for amplified music</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid four" style="margin-top: 24px;">
+    <div class="photo"><img src="img/yugen/05.jpg" alt="Casa Yugen" /></div>
+    <div class="photo"><img src="img/yugen/06.jpg" alt="Casa Yugen" /></div>
+    <div class="photo"><img src="img/yugen/07.jpg" alt="Casa Yugen" /></div>
+    <div class="photo"><img src="img/yugen/08.jpg" alt="Casa Yugen" /></div>
+  </div>
+
+  <p class="body" style="font-size:13px; color:var(--ink-soft); margin-top: 24px; max-width: 820px;">$25,000/day · Casa Manager included. Five-day run (Sept 13–17): <strong>$125,000</strong>. Cleaning service available. Art and furniture adjustment quoted on request.</p>
+</section>
+
+<!-- ===============================================================
+     SPACE 09 — MANHATTAN MODERN APARTMENT
+     =============================================================== -->
+<section>
+  <div class="option-header">
+    <div class="option-num">09</div>
+    <div>
+      <div class="option-tag">Manhattan · Discovery Portfolio · Gallery-format loft · Open plan</div>
+      <h2 class="option-title">Manhattan Modern Apartment.<br/>Gallery-white walls, open plan, full kitchen — a clean canvas that arrives ready for AP's visual language.</h2>
+      <div class="price-display">
+        <span class="amount">$35,000<span style="font-size:0.5em;font-weight:600;">/day</span></span>
+        <span class="qualifier">On-site rep included · available</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid quad" style="margin-top: 0;">
+    <div class="photo"><img src="img/nyc315/01.jpg" alt="Manhattan Modern Apartment — main space" /></div>
+    <div class="photo"><img src="img/nyc315/02.jpg" alt="Manhattan Modern Apartment — interior" /></div>
+    <div class="photo"><img src="img/nyc315/03.jpg" alt="Manhattan Modern Apartment — interior" /></div>
+    <div class="photo"><img src="img/nyc315/04.jpg" alt="Manhattan Modern Apartment — interior" /></div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A gallery-format Manhattan apartment from Cocoon's Discovery Portfolio — open-plan, with the gallery-white walls and proportions of a space that was designed to hold art and people in equal measure. The full kitchen integrates into the living volume without breaking the floor plan; the light is consistent across the open layout; the sightlines are long.</p>
+      <p class="body" style="margin-top: 16px;">For a Maison like Audemars Piguet, where the activation needs to feel curated rather than staged, this space offers a rare quality: it reads as neutral without feeling sterile. The proportions do the work. Available through Cocoon's Discovery Portfolio exclusively — not accessible through standard venue platforms.</p>
+    </div>
+    <div>
+      <div class="spec-grid">
+        <div class="spec-item">
+          <div class="spec-label">Format</div>
+          <div class="spec-val">Open-plan · gallery-white walls · full kitchen</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Access</div>
+          <div class="spec-val">Elevator building · on-site rep included</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Furniture & art removal</div>
+          <div class="spec-val">Clean-canvas format — minimal existing furniture · confirm remaining pieces with Cocoon<br/><span style="font-size:12px;color:var(--ink-soft);font-style:italic;">All removable · final list required to confirm · potential blocks noted for specific pieces</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Availability</div>
+          <div class="spec-val"><span class="badge green">Available</span><br/><span style="font-size:13px;color:var(--ink-soft);">Subject to ownership confirmation</span></div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Previous brand activations</div>
+          <div class="spec-val soft">Discovery Portfolio — details on request</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">Sound / noise</div>
+          <div class="spec-val soft">Residential building — confirm for amplified programming</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="photo-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 24px;">
+    <div class="photo"><img src="img/nyc315/05.jpg" alt="Manhattan Modern Apartment" /></div>
+    <div class="photo"><img src="img/nyc315/06.jpg" alt="Manhattan Modern Apartment" /></div>
+    <div class="photo"><img src="img/nyc315/07.jpg" alt="Manhattan Modern Apartment" /></div>
+  </div>
+
+  <p class="body" style="font-size:13px; color:var(--ink-soft); margin-top: 24px; max-width: 820px;">$35,000/day · on-site rep included. Five-day run (Sept 13–17): <strong>$175,000</strong>. Subject to final ownership approval. Security required and quoted with final contract.</p>
+</section>
+
+<!-- ===============================================================
+     AT A GLANCE — COMPARISON TABLE
+     =============================================================== -->
+<div style="background: var(--cream-deep); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);">
+  <section style="padding-top: clamp(56px,8vh,96px); padding-bottom: clamp(56px,8vh,96px);">
+    <div class="superhead">All nine spaces</div>
+    <h2 class="headline" style="margin-top: 12px;">At a glance.</h2>
+    <div style="overflow-x: auto;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Space</th>
+            <th>Per day</th>
+            <th>5-day total</th>
+            <th>Capacity</th>
+            <th>Elevator</th>
+            <th>Art / furniture removal</th>
+            <th>Availability</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--terracotta);font-weight:700;">01</td>
+            <td class="space-name">Casa Maxima<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Tribeca loft</span></td>
+            <td class="price-col">$15,000</td>
+            <td class="price-col">$75,000</td>
+            <td>Up to 74</td>
+            <td class="avail-yes">✓ Elevator</td>
+            <td>Partial — movable pieces</td>
+            <td class="avail-yes">Available<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Subject to ownership confirmation · Visits from July 1</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--terracotta);font-weight:700;">02</td>
+            <td class="space-name">Casa Victoria<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Townhouse</span></td>
+            <td class="price-col">$25,000</td>
+            <td class="price-col">$125,000</td>
+            <td>25–50</td>
+            <td class="avail-yes">✓ Passenger + Freight</td>
+            <td>Potentially removable · list to confirm</td>
+            <td class="avail-tbd">Confirming</td>
+          </tr>
+          <tr>
+            <td style="color:var(--terracotta);font-weight:700;">03</td>
+            <td class="space-name">Casa Joy<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Townhouse + garden</span></td>
+            <td class="price-col">$27,000</td>
+            <td class="price-col">$135,000</td>
+            <td>25–60</td>
+            <td class="avail-yes">✓ Elevator</td>
+            <td>All removable · list to confirm</td>
+            <td class="avail-yes">Available</td>
+          </tr>
+          <tr>
+            <td style="color:var(--terracotta);font-weight:700;">04</td>
+            <td class="space-name">West Village Brownstone<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Discovery Portfolio</span></td>
+            <td class="price-col">$41,200</td>
+            <td class="price-col">$206,000</td>
+            <td>25–40</td>
+            <td class="avail-yes">✓ Passenger + Freight</td>
+            <td>Selective repositioning</td>
+            <td class="avail-yes">Available</td>
+          </tr>
+          <tr>
+            <td style="color:var(--terracotta);font-weight:700;">05</td>
+            <td class="space-name">Manhattan Brownstone II<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Discovery Portfolio</span></td>
+            <td class="price-col">$44,200</td>
+            <td class="price-col">$221,000</td>
+            <td>25–40</td>
+            <td class="avail-yes">✓ Passenger + Freight</td>
+            <td>Selective repositioning</td>
+            <td class="avail-yes">Available</td>
+          </tr>
+          <tr>
+            <td style="color:var(--terracotta);font-weight:700;">06</td>
+            <td class="space-name">Tribeca Duplex Penthouse<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Developer partnership · Paris Forino design</span></td>
+            <td class="price-col">$70,000</td>
+            <td class="price-col">$350,000</td>
+            <td>7,062 sq ft · Duplex</td>
+            <td class="avail-yes">✓ Elevator<br/>Direct PH access</td>
+            <td>New space · full flexibility · never activated</td>
+            <td class="avail-yes">Available<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Subject to ownership confirmation · Visit from ~July 2</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--terracotta);font-weight:700;">07</td>
+            <td class="space-name">Landmark off Fifth<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Beaux-Arts gallery · UES</span></td>
+            <td class="price-col">$84,500</td>
+            <td class="price-col">$422,500</td>
+            <td>150+</td>
+            <td class="avail-yes">✓ Service elevator<br/>Porte-cochère</td>
+            <td>Exhibitions cleared entirely</td>
+            <td class="avail-yes">Available<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Subject to ownership confirmation</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--terracotta);font-weight:700;">08</td>
+            <td class="space-name">Casa Yugen<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Nolita collector's loft · 4th floor</span></td>
+            <td class="price-col">$25,000</td>
+            <td class="price-col">$125,000</td>
+            <td>4,158 sq ft · up to 60</td>
+            <td class="avail-yes">✓ Elevator</td>
+            <td>Furniture repositionable · art: confirm removal</td>
+            <td class="avail-yes">Available</td>
+          </tr>
+          <tr>
+            <td style="color:var(--terracotta);font-weight:700;">09</td>
+            <td class="space-name">Manhattan Modern Apartment<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Discovery Portfolio · Gallery-format</span></td>
+            <td class="price-col">$35,000</td>
+            <td class="price-col">$175,000</td>
+            <td>Open-plan · 25–50</td>
+            <td class="avail-yes">✓ Elevator</td>
+            <td>Clean canvas · confirm remaining pieces</td>
+            <td class="avail-yes">Available<br/><span style="font-weight:400;font-size:12px;color:var(--ink-soft);">Subject to ownership confirmation</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="body" style="font-size:13px;color:var(--ink-soft);margin-top:20px;max-width:820px;">All prices per day. Five-day run total: September 13–17, 2026 (1 build · 1 activation · 3 setup/breakdown). Casa Manager included in all Cocoon-owned spaces. On-site rep included in Discovery Portfolio spaces. Cleaning, security, and additional services quoted separately where noted. Prices held for five business days.</p>
+  </section>
+</div>
+
+<!-- ===============================================================
+     NEXT STEPS
+     =============================================================== -->
+<div class="callout ink full" style="padding-left: clamp(24px, 5vw, 80px); padding-right: clamp(24px, 5vw, 80px);">
+  <div style="max-width: var(--max); margin: 0 auto;">
+    <div class="superhead" style="color: rgba(255,255,255,0.78);">What happens next</div>
+    <h2 class="title" style="color: #FFF; margin-top: 18px; max-width: 820px;">Three questions and we move to holds.</h2>
+
+    <div class="walk" style="margin-top: 40px;">
+      <div class="step">
+        <div class="step-num">01 — Shortlist</div>
+        <h4 style="color: #FFF;">Which spaces made you look twice?</h4>
+        <p style="color: rgba(245,242,232,0.78);">Share your top two or three directions. We'll issue holds immediately and can schedule site visits within 48 hours for any space that's ready.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02 — Site visits</div>
+        <h4 style="color: #FFF;">Walk the shortlist in person.</h4>
+        <p style="color: rgba(245,242,232,0.78);">We're available to accompany Mazarine and/or the AP team for site visits across all confirmed spaces this week and next. The developer space (06) is ready from approximately July 2nd.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03 — Contract & hold</div>
+        <h4 style="color: #FFF;">Secure September 13–17.</h4>
+        <p style="color: rgba(245,242,232,0.78);">Once a direction is confirmed, we issue the rental agreement and hold the dates. The September window is open — but several of these spaces have competing interest for autumn activations.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-sig">
+      <strong>Eduard Monteagudo</strong>
+      Lead, Activation Rentals · Cocoon Flex Spaces<br/>
+      <a href="mailto:eduard@cocoonflexspaces.com">eduard@cocoonflexspaces.com</a>
+    </div>
+    <div class="footer-meta">
+      Prepared for Olivia Baker &amp; Ariella Paradise · Mazarine New York<br/>
+      Audemars Piguet Brand Activation · September 2026<br/>
+      Cocoon Flex Spaces · cocoonflexspaces.com
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

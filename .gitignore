@@ -1,0 +1,6 @@
+# Exclude download scripts — contain source URLs and Drive IDs
+img/barclay/download-listing.sh
+img/joy-naked/download-joy.sh
+
+# macOS
+.DS_Store
